@@ -1,0 +1,13 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Assemble' do
+  pod 'SDAutoLayout' 
+  pod 'SDWebImage'   
+  pod 'MBProgressHUD'   
+  pod 'RongCloudIMKitWithVoip','~> 2.6.1'
+  pod 'UMengSocialCOM', '~> 5.2.1'
+  pod 'UMengAnalytics-NO-IDFA','~> 4.0.5'
+ pod  'Qiniu','~>7.1'
+
+end
