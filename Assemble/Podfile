@@ -8,6 +8,7 @@ target 'Assemble' do
   pod 'RongCloudIMKitWithVoip','~> 2.6.1'
   pod 'UMengSocialCOM', '~> 5.2.1'
   pod 'UMengAnalytics-NO-IDFA','~> 4.0.5'
- pod  'Qiniu','~>7.1'
+  pod  'Qiniu','~>7.1'
+  pod 'FMDB'
 
 end

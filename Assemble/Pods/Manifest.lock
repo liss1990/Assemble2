@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
   - HappyDNS (0.3.9)
   - MBProgressHUD (1.0.0)
   - Qiniu (7.1.0.1):
@@ -28,6 +31,7 @@ PODS:
   - UMengSocialCOM (5.2.1)
 
 DEPENDENCIES:
+  - FMDB
   - MBProgressHUD
   - Qiniu (~> 7.1)
   - RongCloudIMKitWithVoip (~> 2.6.1)
@@ -38,6 +42,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   HappyDNS: 17be04178df2dd09f0ee6ac33628589b7f9910e8
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   Qiniu: 0e92ff0d1b9afbc55275306671284e4ebeb08d03
@@ -47,6 +52,6 @@ SPEC CHECKSUMS:
   UMengAnalytics-NO-IDFA: 965a219b05475ff2a4c09a164139a27bbaa0e25b
   UMengSocialCOM: 074c135ce349aa4c8848d3fb8458757bcb6ffb67
 
-PODFILE CHECKSUM: 085ffae13d83d501a7c85e85347e81392f36df81
+PODFILE CHECKSUM: 4d9036d203a3461841749c6527ea92b6600c34c5
 
 COCOAPODS: 1.0.1

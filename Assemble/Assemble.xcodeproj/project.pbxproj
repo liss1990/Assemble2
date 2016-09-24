@@ -24,6 +24,8 @@
 		770F1E971D94C2CC0020F32A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 770F1E961D94C2CC0020F32A /* libz.tbd */; };
 		770F1E991D94C2D60020F32A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 770F1E981D94C2D60020F32A /* libc++.tbd */; };
 		770F1E9B1D94C2DF0020F32A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 770F1E9A1D94C2DF0020F32A /* libsqlite3.tbd */; };
+		7713EE2D1D9664D5008FDB8A /* FMDBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7713EE2C1D9664D5008FDB8A /* FMDBTableViewController.m */; };
+		7713EE311D966706008FDB8A /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7713EE301D966706008FDB8A /* UserModel.m */; };
 		772576F81D94CDBE0023A65E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772576F71D94CDBE0023A65E /* CoreMotion.framework */; };
 		772576FA1D94CDCB0023A65E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772576F91D94CDCB0023A65E /* CFNetwork.framework */; };
 		772576FC1D94CDDB0023A65E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772576FB1D94CDDB0023A65E /* CoreGraphics.framework */; };
@@ -75,6 +77,10 @@
 		770F1E961D94C2CC0020F32A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		770F1E981D94C2D60020F32A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		770F1E9A1D94C2DF0020F32A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		7713EE2B1D9664D5008FDB8A /* FMDBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBTableViewController.h; sourceTree = "<group>"; };
+		7713EE2C1D9664D5008FDB8A /* FMDBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBTableViewController.m; sourceTree = "<group>"; };
+		7713EE2F1D966706008FDB8A /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		7713EE301D966706008FDB8A /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		772576F71D94CDBE0023A65E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		772576F91D94CDCB0023A65E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		772576FB1D94CDDB0023A65E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -241,6 +247,7 @@
 		770F1E6A1D942ECF0020F32A /* Assemble */ = {
 			isa = PBXGroup;
 			children = (
+				7713EE2E1D9666C9008FDB8A /* FMDB */,
 				7725777F1D94EC5E0023A65E /* 7Q */,
 				772577791D94E5DE0023A65E /* Bank */,
 				772577781D94E5CD0023A65E /* zhifubao */,
@@ -277,6 +284,17 @@
 				770F1E881D94C2070020F32A /* WXApiObject.h */,
 			);
 			path = SDKExport;
+			sourceTree = "<group>";
+		};
+		7713EE2E1D9666C9008FDB8A /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				7713EE2B1D9664D5008FDB8A /* FMDBTableViewController.h */,
+				7713EE2C1D9664D5008FDB8A /* FMDBTableViewController.m */,
+				7713EE2F1D966706008FDB8A /* UserModel.h */,
+				7713EE301D966706008FDB8A /* UserModel.m */,
+			);
+			name = FMDB;
 			sourceTree = "<group>";
 		};
 		772577011D94CE400023A65E /* zhifubao */ = {
@@ -601,11 +619,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7713EE2D1D9664D5008FDB8A /* FMDBTableViewController.m in Sources */,
 				772577641D94CE670023A65E /* base64.m in Sources */,
 				770F1E731D942ECF0020F32A /* ViewController.m in Sources */,
 				7725776A1D94CE670023A65E /* RSADataSigner.m in Sources */,
 				772577691D94CE670023A65E /* openssl_wrapper.m in Sources */,
 				772577651D94CE670023A65E /* DataSigner.m in Sources */,
+				7713EE311D966706008FDB8A /* UserModel.m in Sources */,
 				7725776B1D94CE670023A65E /* RSADataVerifier.m in Sources */,
 				772577661D94CE670023A65E /* DataVerifier.m in Sources */,
 				772577751D94D1960023A65E /* AliPayOther.m in Sources */,

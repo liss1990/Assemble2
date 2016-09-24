@@ -165,7 +165,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b1P-dt-m2a" id="c6S-4h-z2s">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -194,7 +194,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kw6-Lg-9Mb" id="Ieo-Gy-n1v">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -213,7 +213,7 @@
         <!--Table View Controller-->
         <scene sceneID="qIH-G4-eK9">
             <objects>
-                <tableViewController id="Woj-Bn-A42" sceneMemberID="viewController">
+                <tableViewController id="Woj-Bn-A42" customClass="FMDBTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="J2V-Pf-phs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,7 +223,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A2F-Db-NYb" id="NvB-rC-LXz">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -233,7 +233,13 @@
                             <outlet property="delegate" destination="Woj-Bn-A42" id="f56-eE-YRi"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="W2m-B0-QhC"/>
+                    <navigationItem key="navigationItem" id="W2m-B0-QhC">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="jG1-Vr-abt">
+                            <connections>
+                                <action selector="addBtn:" destination="Woj-Bn-A42" id="w4J-Gb-lLb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ndm-wp-7DH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
